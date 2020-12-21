@@ -21,7 +21,7 @@
   ],
   "autoload": {
     "psr-4": {
-      "B2bzandne\\CheckoutCMSBloc\\": ""
+      "B2bzandnen\\CheckoutCMSBlock\\": ""
     },
     "files": [
       "registration.php"
