@@ -2,10 +2,10 @@
   "name": "b2bzanden/checkoutcmsblock",
   "license": "OSL-3.0",
   "type": "magento2-module",
-  "homepage": "https://github.com/hans2103/B2bzanden_M2_ChangeCategoryTitle",
+  "homepage": "https://github.com/hans2103/B2bzanden_M2_CheckoutCMSBlock",
   "description": "Magento 2 module which provides a CMS block to the knockout checkout template.",
   "keywords":[ "composer-installer", "magento"],
-  "version": "1.1.1",
+  "version": "1.1.2",
   "require": {
     "php": ">=7.1.0"
   },
