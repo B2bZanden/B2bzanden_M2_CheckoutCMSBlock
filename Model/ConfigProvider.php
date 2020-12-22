@@ -2,6 +2,7 @@
 
 namespace B2bzanden\CheckoutCMSBlock\Model;
 
+
 use Magento\Checkout\Model\ConfigProviderInterface;
 use Magento\Framework\View\LayoutInterface;
 
@@ -9,12 +10,21 @@ class ConfigProvider implements ConfigProviderInterface
 {
     /** @var LayoutInterface */
     protected $_layout;
-    protected $cmsBlock;
+    protected $blocks;
 
-    public function __construct(LayoutInterface $layout, $blockId)
+    public function __construct(LayoutInterface $layout, $blockIds)
     {
         $this->_layout = $layout;
-        $this->cmsBlock = $this->constructBlock($blockId);
+        $this->blocks = $this->buildBlocks($blockIds);
+    }
+
+    public function buildBlocks($blockIds)
+    {
+        $blocks = array();
+        foreach ($blockIds as $blockName => $blockId) {
+            $blocks[$blockName] = $this->constructBlock($blockId);
+        }
+        return $blocks;
     }
 
     public function constructBlock($blockId)
@@ -26,8 +36,6 @@ class ConfigProvider implements ConfigProviderInterface
 
     public function getConfig()
     {
-        return [
-            'cms_block' => $this->cmsBlock
-        ];
+        return $this->blocks;
     }
 }

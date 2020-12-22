@@ -13,7 +13,7 @@
                                     <item name="children" xsi:type="array">
                                         <item name="cms-block" xsi:type="array">
                                             <item name="component" xsi:type="string">
-                                                B2bzanden/CheckoutCMSBlock/js/view/cms-block
+                                                B2bzanden_CheckoutCMSBlock/js/view/cms-block
                                             </item>
                                             <item name="sortOrder" xsi:type="string">0</item>
                                         </item>
