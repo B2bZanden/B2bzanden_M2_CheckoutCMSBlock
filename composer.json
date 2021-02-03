@@ -2,10 +2,10 @@
   "name": "b2bzanden/checkoutcmsblock",
   "license": "OSL-3.0",
   "type": "magento2-module",
-  "homepage": "https://github.com/hans2103/B2bzanden_M2_CheckoutCMSBlock",
+  "homepage": "https://github.com/B2bzanden/B2bzanden_M2_CheckoutCMSBlock",
   "description": "Magento 2 module which provides a CMS block to the knockout checkout template.",
   "keywords":[ "composer-installer", "magento"],
-  "version": "1.1.2",
+  "version": "2.0.0",
   "require": {
     "php": ">=7.1.0"
   },
